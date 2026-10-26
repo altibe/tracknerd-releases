@@ -19,6 +19,7 @@
     <div class="wrap top-in">
       <a class="logo" href="#"><img src="img/tracknerd_word_dark.webp" alt="TrackNerd."><span>Sim Racing Intelligence</span></a>
       <nav>
+        <a href="#ueberblick">Überblick</a>
         <a href="#funktionen">Funktionen</a>
         <a href="#ablauf">So funktioniert's</a>
         <a href="#download">Download</a>
@@ -43,12 +44,34 @@
           <li><b>PS5 + PC</b> – keine Zusatzhardware</li>
         </ul>
       </div>
-      <img class="hero-img shot" src="img/live_dark.jpg" alt="TrackNerd Live-Board mit Delta, Reifen, Tank, Tipp-Panel, Streckenkarte und Kurvenanalyse">
+      <div class="hero-vis">
+        <img class="hero-img shot" src="img/live_dark.jpg" alt="TrackNerd Live-Board mit Delta, Reifen, Tank, Tipp-Panel, Streckenkarte und Kurvenanalyse">
+        <div class="live-strip" aria-hidden="true">
+          <div class="ls-stripe"></div>
+          <div class="ls-id"><span>Du · Live</span><b id="lsDelta">−0,12</b></div>
+          <div class="ls-ped"><div><i id="lsThr" style="height:80%"></i></div><div><i id="lsBrk" class="brk" style="height:0%"></i></div></div>
+          <div class="ls-num"><b id="lsSpd">212</b><small>km/h</small></div>
+          <div class="ls-num"><b id="lsGear">5</b><small>Gang</small></div>
+        </div>
+        <div class="live-say" id="lsSay" aria-live="off">„Kurve 3: 45 Meter später bremsen.“</div>
+      </div>
+    </section>
+
+    <section id="ueberblick" class="wrap band t-dark overview">
+      <h2 class="sec">Alles in einem Paket</h2>
+      <div class="tiles">
+        <a class="tile" href="#f-live"><b>−0,12</b><span>Delta live</span><small>zur Bestzeit, je Sektor und je Kurve</small></a>
+        <a class="tile" href="#f-race"><b>R12 · 93 L</b><span>Tankplan</span><small>wann tanken, wie viel – rechnet mit deinem Verbrauch</small></a>
+        <a class="tile" href="#f-tipps"><b>41</b><span>Strecken mit Tipps</span><small>Gang, Bremsmarke und Linie vor jeder Kurve</small></a>
+        <a class="tile" href="#f-engineer"><b>„Box!“</b><span>Race Engineer</span><small>Ansagen im Headset – per Discord oder am PC</small></a>
+        <a class="tile" href="#f-kurve"><b>+45 m</b><span>Kurve im Detail</span><small>später bremsen? Beide Linien, Punkte und Wiedergabe</small></a>
+        <a class="tile" href="#f-liga"><b>Top 5</b><span>Online-Liga</span><small>Bestrunden und Mittelwerte deiner Liga</small></a>
+      </div>
     </section>
 
     <section id="funktionen" class="wrap">
       <h2 class="sec">Funktionen</h2>
-      <article class="feat band t-light">
+      <article class="feat band t-light" id="f-live">
         <figure><img src="img/live_light.jpg" class="shot" alt="Live-Board im hellen Design" loading="lazy"></figure>
         <div>
           <span class="num">01</span>
@@ -63,7 +86,7 @@
         </div>
       </article>
 
-      <article class="feat rev band t-dark">
+      <article class="feat rev band t-dark" id="f-race">
         <figure><img src="img/race_dark.jpg" class="shot" alt="Race-Board mit Rundenzeit, Runde 5 von 45 und Tankvorschlag" loading="lazy"></figure>
         <div>
           <span class="num">02</span>
@@ -78,7 +101,7 @@
         </div>
       </article>
 
-      <article class="feat band t-light">
+      <article class="feat band t-light" id="f-tipps">
         <figure><img src="img/tipp_light.jpg" class="shot" alt="Tipp-Board: Streckenkarte und großer Kurven-Tipp mit Entfernung und Gang" loading="lazy"></figure>
         <div>
           <span class="num">03</span>
@@ -93,12 +116,12 @@
         </div>
       </article>
 
-      <article class="feat rev band t-dark">
+      <article class="feat rev band t-dark" id="f-engineer">
         <figure class="voice">
           <div class="bubble ask">„Engineer, wie viel Sprit habe ich noch?“</div>
           <div class="bubble">„Sprit reicht noch 8 Runden, bei 7,8 Liter pro Runde.“</div>
           <div class="bubble">„Box nächste Runde. 93 Liter tanken.“</div>
-          <div class="bubble">„Kurve 4: plus 3 Zehntel, Scheitel 8 km/h zu langsam.“</div>
+          <div class="bubble">„Kurve 3: plus zwei Zehntel, 45 Meter später bremsen und 20 Meter früher Vollgas.“</div>
           <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         </figure>
         <div>
@@ -109,22 +132,24 @@
             <li>Ansagen zu <b>Tank, Boxenstopp, Reifen</b> und Restrunden – nur auf Geraden, nie kurz vorm Bremsen</li>
             <li><b>Bremspunkt-Piepser</b> und Schalt-Piep</li>
             <li><b>Fragen per Sprache</b>: „Engineer, wann muss ich in die Box?“ – Erkennung offline auf deinem PC</li>
-            <li>Läuft über deinen eigenen Discord-Bot im Sprachkanal, in dem du auf der PS5 bist</li>
+            <li>Kurvenhinweise als Handlung: <b>„45 Meter später bremsen“</b> statt Zahlenkolonnen</li>
+            <li>Über deinen eigenen Discord-Bot im Sprachkanal – oder <b>direkt am PC</b>: Mit einem kleinen
+              Kopfhörer-Mixer bleibst du in der PS-Party mit deinen Freunden und hörst trotzdem nur du den Engineer</li>
           </ul>
         </div>
       </article>
 
-      <article class="feat band t-light">
-        <figure class="tall"><img src="img/kurven_light.jpg" class="shot" alt="Streckenkarte, nächster Bremspunkt und Kurvenanalyse mit Zeit je Kurve" loading="lazy"></figure>
+      <article class="feat band t-light wide" id="f-kurve">
+        <figure><img src="img/kurve_detail_dark.jpg" class="shot" alt="Fahranalyse: Kurve 1 in Spa groß mit beiden Linien, Brems-, Scheitel- und Vollgaspunkten, Fahrer-Leisten mit Pedalen und Lenkeinschlag, rechts Streckenkarte mit Zeit je Kurve und Zusammenfassung" loading="lazy"></figure>
         <div>
           <span class="num">05</span>
-          <h3>Kurvenanalyse</h3>
-          <p>Finde die Zehntel, die dir fehlen – direkt nach jeder Kurve.</p>
+          <h3>Strecke &amp; Kurve im Detail</h3>
+          <p>Finde die Zehntel, die dir fehlen – Kurve für Kurve, mit deiner Linie neben der Referenz.</p>
           <ul>
-            <li><b>Zeit je Kurve</b> gegen deine Referenz, live auf Live- und Race-Board</li>
-            <li>Der Grund dazu: Scheiteltempo, früher oder später gebremst, später ans Gas</li>
-            <li>Nach jeder Runde die <b>drei Kurven mit dem größten Verlust</b></li>
-            <li>Auf Wunsch als kurze Ansage: „Kurve 12, plus ein Zehntel“</li>
+            <li>Klick auf eine Kurve der Strecke: <b>beide Linien groß</b>, nebeneinander oder übereinander, wahlweise auf Asphalt</li>
+            <li><b>Brems-, Scheitel- und Vollgaspunkt</b> beider Runden, direkt an der Linie beschriftet</li>
+            <li><b>Wiedergabe</b>: zwei Autos fahren zeitgleich durch die Kurve – mit Gas, Bremse, Gang, Drehzahl und Lenkeinschlag</li>
+            <li><b>Zeit je Kurve</b> gegen deine Bestzeit, die Gold-Runde oder einen Liga-Kollegen; nach jeder Runde die drei größten Verluste</li>
           </ul>
         </div>
       </article>
@@ -144,7 +169,7 @@
         </div>
       </article>
 
-      <article class="feat band t-light">
+      <article class="feat band t-light" id="f-liga">
         <figure><img src="img/online_light.jpg" class="shot" alt="Online-Seite mit Liga-Bestrunden und Liga-Mittelwerten" loading="lazy"></figure>
         <div>
           <span class="num">07</span>
@@ -215,6 +240,7 @@
           <p class="small">Voraussetzungen: Windows 10/11, Microsoft Edge, PC und PS5 im selben Netzwerk. Updates meldet das Programm selbst.</p>
         </div>
         <div class="dl-btns">
+          <div class="price"><b>0 €</b><span>kostenlos · kein Abo · läuft lokal auf deinem PC</span></div>
           <a class="btn primary big" href="https://github.com/altibe/tracknerd-releases/releases/latest">Neueste Version herunterladen</a>
           <span class="small" id="ver"></span>
         </div>
@@ -232,6 +258,31 @@
   </footer>
 
 <script>
+(function () {
+  // Live-Leiste im Kopfbereich: eine kleine Runde aus Geraden und Bremszonen, dazu wechselnde Ansagen
+  var thr = document.getElementById('lsThr'), brk = document.getElementById('lsBrk'), spd = document.getElementById('lsSpd'),
+      gear = document.getElementById('lsGear'), dl = document.getElementById('lsDelta'), say = document.getElementById('lsSay');
+  var lines = ['„Kurve 3: 45 Meter später bremsen.“', '„Box nächste Runde. 93 Liter.“', '„Sprit reicht noch 8 Runden.“',
+               '„Kurve 7: minus ein Zehntel, 10 Meter früher am Gas.“', '„Noch fünf Runden.“'];
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var t0 = performance.now(), li = 0;
+  function frame(now) {
+    var t = ((now - t0) / 1000) % 12;                       // 12 s Schleife
+    var braking = (t > 3 && t < 4.2) || (t > 8 && t < 9);
+    var v = braking ? Math.max(95, 255 - (t % 4 - (t > 8 ? 0 : 3)) * 140) : Math.min(262, 110 + ((t > 8 ? t - 9 : t > 4.2 ? t - 4.2 : t + 3) * 28));
+    thr.style.height = (braking ? 0 : Math.min(100, 70 + v / 10)) + '%';
+    brk.style.height = (braking ? 85 : 0) + '%';
+    spd.textContent = Math.round(v);
+    gear.textContent = v < 120 ? 3 : v < 160 ? 4 : v < 205 ? 5 : 6;
+    var d = -0.12 + 0.08 * Math.sin(now / 2400);
+    dl.textContent = (d < 0 ? '−' : '+') + Math.abs(d).toFixed(2).replace('.', ',');
+    dl.className = d > 0 ? 'loss' : '';
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  setInterval(function () { li = (li + 1) % lines.length; say.classList.remove('in'); void say.offsetWidth;
+                            say.textContent = lines[li]; say.classList.add('in'); }, 4000);
+})();
 (function () {
   // aktuelle Versionsnummer aus dem neuesten Release
   fetch('https://api.github.com/repos/altibe/tracknerd-releases/releases/latest')
