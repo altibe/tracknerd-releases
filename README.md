@@ -10,7 +10,7 @@ Renningenieur – entwickelt für Gran Turismo 7. Dieses Repository enthält nur
 **[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/tracknerd-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort die Setup-Datei (`.exe`) wählen.
 
 ## Installation
-1. Setup herunterladen und starten.
+1. Setup herunterladen. Meldet Edge „unsicher“ / „wird nicht häufig heruntergeladen“: **… → Beibehalten → Trotzdem beibehalten** (das Setup ist noch nicht digital signiert). Dann starten.
 2. Windows warnt „Der Computer wurde durch Windows geschützt“ (das Setup ist nicht signiert):
    **Weitere Informationen → Trotzdem ausführen**.
 3. Keine Administratorrechte nötig. Haken „Firewall-Regeln anlegen“ drin lassen.
